@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Catálogo ADS</title>
+</head>
+<body>
+    <h1>Catálogo ADS</h1>
+    <p>Escolha seus alunos e finalize a compra no WhatsApp</p>
+
+    <button onclick="verCarrinho()">Carrinho = <span id="qtdCarrinho">0</span></button>
+
+    <!-- CADA DIV É UM PRODUTO -->
+    <div class="produto" onclick="adicionarCarrinho('1','Jeyliel','49');">
+        <div class="foto" style="background-image: url(fotos/jeje.gif);"></div>
+        <div class="infos"> 
+            <h1>Jeyliel</h1>
+            <p>Nossa que aluno bom, meu Deus.</p>
+        </div>
+        <div class="preco-item">
+            <h1 class="preco">R$49,00</h1>            
+        </div>
+    </div>
+
+    <div class="produto" onclick="adicionarCarrinho('2','João','54');">
+        <div class="foto" style="background-image: url(fotos/joão.gif);"></div>
+        <div class="infos"> 
+            <h1>João</h1>
+            <p>Nossa que aluno foda, meu Deus.</p>
+        </div>
+        <div class="preco-item">
+            <h1 class="preco">R$54,00</h1>            
+        </div>
+    </div>
+
+    <div class="produto" onclick="adicionarCarrinho('3','Calléu','94');">
+        <div class="foto" style="background-image: url(fotos/golden-alfredo.gif);"></div>
+        <div class="infos"> 
+            <h1>Calléu</h1>
+            <p>Nossa como ele dança</p>
+        </div>
+        <div class="preco-item">
+            <h1 class="preco">R$94,00</h1>            
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
